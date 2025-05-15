@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #F5F2EC;
+    color: #1C2A39;
+    box-sizing: border-box;
+}
+
+/* Body uses flex column layout */
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0 0 0;
+    background-color: #1C2A39;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#login-button,
+#register-button {
+    padding: 8px 16px;
+    background-color: #D6A400;
+    border-radius: 6px;
+    border: none;
+    color: #1C2A39;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover,
+#register-button:hover {
+    background-color: #C0392B;
+    color: #F5F2EC;
+    cursor: pointer;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0.2rem 0;
+    font-size: 1.8rem;
+}
+
+h2 {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    color: #4B5320;
+}
+
+#introduction {
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #6E7278;
+}
+
+/* Carousel / Glide */
+.glide {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.glide__arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.glide__arrow {
+    background-color: rgba(28, 42, 57, 0.7);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.glide__arrow:hover {
+    background-color: rgba(28, 42, 57, 0.9);
+}
+
+.glide__bullets {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+}
+
+.glide__bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: #F5F2EC;
+    border-radius: 50%;
+    border: 2px solid #8A4B2D;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.glide__bullet:hover,
+.glide__bullet.glide__bullet--active {
+    background-color: #C0392B;
+    border-color: #C0392B;
+}
+
+/* Modal */
+.modal-backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 360px;
+    width: 90%;
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+    color: #1C2A39;
+}
+
+.modal button {
+    padding: 8px 16px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.customer-btn {
+    background-color: #4B5320;
+    color: white;
+}
+
+.staff-btn {
+    background-color: #8A4B2D;
+    color: white;
+}
+
+/* Modal open button */
+.open-modal-btn {
+    margin: 1rem 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #D6A400;
+    color: #1C2A39;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.open-modal-btn:hover {
+    background-color: #C0392B;
+    color: #F5F2EC;
+}
