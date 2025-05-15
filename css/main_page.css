@@ -29,6 +29,10 @@ header {
     justify-content: space-between;
 }
 
+#logo-container {
+    background-color: #223242;
+}
+
 #logo {
     height: 60px;
 }
