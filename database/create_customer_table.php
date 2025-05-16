@@ -13,7 +13,7 @@ $create_customer_table_sql = "CREATE TABLE IF NOT EXISTS Customer (
 $restaurant_db->query($create_customer_table_sql);
 
 $populate_customer_table_sql = "INSERT INTO Customer (Customer_name, Customer_surname, Customer_email, Customer_telephone, Customer_password) VALUES
-('John', 'Doe', 'john.doe@example.com', '1234567890', '" . password_hash('password123', PASSWORD_DEFAULT) . "'),
+('John', 'Doe', 'john.doe@example.com', '1234567890', '" . password_hash('1234', PASSWORD_DEFAULT) . "'),
 ('Jane', 'Smith', 'jane.smith@example.com', '0987654321', '" . password_hash('1234', PASSWORD_DEFAULT) . "'),
 ('Alice', 'Johnson', 'alice.j@example.com', '1112223333', '" . password_hash('1234', PASSWORD_DEFAULT) . "'),
 ('Bob', 'Brown', 'bob.brown@example.com', '4445556666', '" . password_hash('1234', PASSWORD_DEFAULT) . "'),
