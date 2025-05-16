@@ -1,0 +1,125 @@
+/* General reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F2EC; /* Soft background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #1C2A39;
+}
+
+/* Container */
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 640px;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    height: auto;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(28, 42, 57, 0.15);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #4B5320;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Label styling */
+label {
+    font-size: 15px;
+    color: #6E7278;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+input:focus, select:focus {
+    border-color: #D6A400;
+    outline: none;
+    box-shadow: 0 0 5px rgba(214, 164, 0, 0.4);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4B5320;
+    color: #F5F2EC;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8A4B2D;
+    transform: translateY(-2px);
+}
+
+/* Return button */
+#return-button {
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: transform 0.2s;
+    margin-bottom: 10px;
+}
+
+#return-button img {
+    width: 100%;
+    height: auto;
+}
+
+#return-button:hover {
+    transform: scale(1.15);
+}
