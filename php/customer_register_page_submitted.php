@@ -33,6 +33,7 @@
 <body>
     <div id="container">
         <form action="customer_register_page_submitted.php" method="POST">
+
             <h2>User Registration Form</h2>
             <div class="form-item">
                 <label for="name">Name</label>
