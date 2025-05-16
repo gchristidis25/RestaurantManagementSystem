@@ -1,3 +1,40 @@
+<?php
+    session_start();
+    $API_URL = "http://localhost:80/RestaurantManagementSystem/api/staff_auth_api.php";
+    $data = $_POST;
+    $options = [
+        "http" => [
+            "header" => "Content-type: application/x-www-form-urlencoded",
+            "method" => "POST",
+            "content" => http_build_query($data)
+        ],
+    ];
+    $context = stream_context_create($options);
+    $result = file_get_contents($API_URL, false, $context);
+    $result = json_decode($result, true);
+
+
+    $name = $result["name"];
+    $id = $result["id"];
+    $login_succeed = $result["message"];
+    if ($login_succeed)
+    {
+        $role = $result["role"];
+        $_SESSION["user_logged_in"] = true;
+        $_SESSION["name"] = $name;
+
+        switch ($role)
+        {
+            case "Waiter":
+                header("Location: waiter_management_system.php");
+                break;
+            default:
+                header("Location: not_implemented.php");
+        }
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +49,7 @@
             <div id="container">
                 <h2>Login</h2>
                 <form action="staff_login_page_submitted.php" method="POST">
+                    <p id="warning">Wrong ID or Password!</p>
                     <div class="form-item">
                         <label for="id">Work ID</label>
                         <input type="text" id="id" name="id" placeholder="Enter your work id" required>
