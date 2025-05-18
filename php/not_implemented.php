@@ -1,0 +1,1 @@
+<h1>This part of the Restaurant Management System is not implemented yet</h1>

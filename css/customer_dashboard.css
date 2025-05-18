@@ -1,0 +1,77 @@
+/* General Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f5f2ec;
+  color: #1c2a39;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #1c2a39;
+  color: #f5f2ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+header h2 {
+  font-size: 1.4rem;
+}
+
+/* Button Group */
+.button-group button {
+  background-color: #c0392b;
+  color: #f5f2ec;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #8a4b2d;
+}
+
+/* Main Content */
+main {
+  min-height: calc(100vh - 96px);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #4b5320;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #d6a400;
+  padding-bottom: 0.3rem;
+}
+
+section p {
+  font-size: 1rem;
+  color: #6e7278;
+}

@@ -1,123 +1,124 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Body styling */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #F5F2EC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: "Georgia", serif;
+  background-color: #f5f2ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Main login container */
 main {
-    background-color: #FFFFFF;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    max-width: 420px;
-    border-top: 8px solid #D6A400;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  border-top: 8px solid #d6a400;
 }
 
 /* Header */
 h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #1C2A39;
-    font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #1c2a39;
+  font-weight: bold;
 }
 
 /* Form layout */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 /* Labels */
 label {
-    display: block;
-    font-size: 16px;
-    color: #6E7278;
+  display: block;
+  font-size: 16px;
+  color: #6e7278;
 }
 
 /* Input fields */
 input {
-    padding: 12px;
-    border: 2px solid #6E7278;
-    border-radius: 6px;
-    font-size: 15px;
-    background-color: #F5F2EC;
-    color: #1C2A39;
+  padding: 12px;
+  border: 2px solid #6e7278;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #f5f2ec;
+  color: #1c2a39;
 }
 
 input::placeholder {
-    color: #A0A0A0;
-    font-style: italic;
+  color: #a0a0a0;
+  font-style: italic;
 }
 
 /* Submit Button */
 button {
-    padding: 12px;
-    background-color: #8A4B2D;
-    color: #F5F2EC;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 12px;
+  background-color: #8a4b2d;
+  color: #f5f2ec;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #D6A400;
-    color: #1C2A39;
+  background-color: #d6a400;
+  color: #1c2a39;
 }
 
 /* Container spacing */
 #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Return/back button */
 #return-button {
-    width: 10%;
-    background: #4B5320;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s;
-    align-self: flex-end;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 10%;
+  background: #4b5320;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+  align-self: flex-end;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #return-button img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 #return-button:hover {
-    transform: scale(1.1);
-    background-color: #C0392B;
+  transform: scale(1.1);
+  background-color: #c0392b;
 }
 
 #warning {
-    border-bottom: 2px #C0392B solid;
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #C0392B;
-    font-weight: bold;
+  border-bottom: 2px #c0392b solid;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #c0392b;
+  font-weight: bold;
 }

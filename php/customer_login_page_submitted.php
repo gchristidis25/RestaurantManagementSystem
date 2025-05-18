@@ -20,7 +20,7 @@
     $login_succeed = $result["message"];
     if ($login_succeed)
     {
-        $_SESSION["user_logged_in"] = true;
+        $_SESSION["customer_logged_in"] = true;
         $_SESSION["name"] = $name;
         header("Location: customer_dashboard.php");
         exit;
