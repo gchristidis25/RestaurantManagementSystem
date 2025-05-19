@@ -22,6 +22,7 @@
     {
         $_SESSION["customer_logged_in"] = true;
         $_SESSION["name"] = $name;
+        $_SESSION["id"] = $id;
         header("Location: customer_dashboard.php");
         exit;
     }

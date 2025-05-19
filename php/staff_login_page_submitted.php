@@ -22,6 +22,7 @@
         $role = $result["role"];
         $_SESSION["user_logged_in"] = true;
         $_SESSION["name"] = $name;
+        $_SESSION["id"] = $id;
 
         switch ($role)
         {
