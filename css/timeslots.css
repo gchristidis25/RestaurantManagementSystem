@@ -1,0 +1,11 @@
+.low-capacity {
+    background-color: green;
+}
+
+.high-capacity {
+    background-color: brown;
+}
+
+.full-booked {
+    background-color: red;
+}
