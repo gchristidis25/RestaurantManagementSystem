@@ -8,6 +8,7 @@ if (!$_SESSION["customer_logged_in"])
 }
 
 $name = $_SESSION["name"];
+$id = $_SESSION["id"];
 ?>
 
 
@@ -21,7 +22,9 @@ $name = $_SESSION["name"];
     </head>
     <body>
         <header>
-            <h2><?php echo "Welcome, " . $name ?></h2>
+            <h2 class="customer-info" id="<?php echo $id ?>">
+            <?php echo "Welcome, " . $name ?>
+            </h2>
             <div class="button-group">
                 <button id="reservation-button">Make Reservation</button>
                 <button id="logout-button">Logout</button>
@@ -42,7 +45,6 @@ $name = $_SESSION["name"];
                     Every dish has a purpose.
                     </p>
                 </section>
-
                 <section>
                     <h2>Chef's Note</h2>
                     <p>“Every second counts. Every detail matters. This isn’t just a restaurant — it’s a chance to make something real.
