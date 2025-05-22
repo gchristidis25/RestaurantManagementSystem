@@ -13,7 +13,7 @@ $id = $_SESSION["id"];
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Customer Dashboard</title>

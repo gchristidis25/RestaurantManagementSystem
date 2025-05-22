@@ -22,7 +22,7 @@ async function getReservations()
 {
     const customerID = getCustomerID();
     console.log(customerID);
-    const API_URL = `http://localhost:80/RestaurantManagementSystem/api/reservation_api.php?action=RESERVATIONS&customerID=${encodeURIComponent(customerID)}`;
+    const API_URL = `http://localhost:80/RestaurantManagementSystem/api/reservation_api.php?action=CUSTOMER_RESERVATIONS&customerID=${encodeURIComponent(customerID)}`;
     const response = await fetch(API_URL, {
         method: "GET",
         credentials: "include",
@@ -31,21 +31,24 @@ async function getReservations()
     });
 
     const reservations = await response.json()
-
     return [reservations["confirmed"], reservations["pending"]]
 }
 
-function createTable()
-{
+function createTable() {
     const table = document.createElement("table");
+
+    const thead = document.createElement("thead");
     const headerRow = document.createElement("tr");
     const headers = ["Reservation Date", "Start Time", "End Time", "Number of Guests", "Notes"];
+
     headers.forEach(headerText => {
         const th = document.createElement("th");
         th.textContent = headerText;
         headerRow.appendChild(th);
     });
-    table.appendChild(headerRow);
+
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
 
     return table;
 }
@@ -54,6 +57,8 @@ function displayReservations(pendingReservations)
 {
     if (pendingReservations.length === 0) return null;
     const table = createTable();
+    const tbody = document.createElement("tbody");
+
     for (const pendingReservation of pendingReservations)
     {
         const row = document.createElement("tr");
@@ -74,32 +79,44 @@ function displayReservations(pendingReservations)
         row.appendChild(guestNumberCell);
 
         const notesCell = document.createElement("td");
-        notesCell.textContent = pendingReservation["Reservation_Notes"];
+        notesCell.textContent = pendingReservation["Reservation_notes"];
         row.appendChild(notesCell);
 
-        table.appendChild(row);
+        tbody.appendChild(row);
     }
+    table.appendChild(tbody);
 
     return table;
 }
 
 async function display()
 {
-    const [completedReservations, pendingReservations] = await getReservations();
-    if (!displayReservations(completedReservations) && !displayReservations(pendingReservations)) return;
+    const [confirmedReservations, pendingReservations] = await getReservations();
+    if (!displayReservations(confirmedReservations) && !displayReservations(pendingReservations)) return;
 
-    const main = document.querySelector("main");
-    main.innerHTML = "";
-    if (completedReservations)
-    {
-        const completedReservationsTable = displayReservations(completedReservations);
-        main.appendChild(completedReservationsTable);
-    }
+    const content = document.querySelector(".content");
+    content.innerHTML = "";
+
+
 
     if (pendingReservations)
     {
+        const pendingTitle = document.createElement("h2");
+        pendingTitle.textContent = "Pending Reservations";
+        content.appendChild(pendingTitle);
+
         const pendingReservationsTable = displayReservations(pendingReservations);
-        main.appendChild(pendingReservationsTable);
+        content.appendChild(pendingReservationsTable);
+    }
+
+    if (confirmedReservations)
+    {
+        const confirmedTitle = document.createElement("h2");
+        confirmedTitle.textContent = "Confirmed Reservations";
+        content.appendChild(confirmedTitle);
+        
+        const confirmedReservationsTable = displayReservations(confirmedReservations);
+        content.appendChild(confirmedReservationsTable);
     }
 }
 
