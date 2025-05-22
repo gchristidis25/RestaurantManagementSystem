@@ -29,7 +29,7 @@ function closeModal() {
 function addStaffLoginButtonFunctionality() {
   const staffLoginButton = document.getElementById("staff-login-btn");
   staffLoginButton.addEventListener("click", () => {
-    window.location.href = "../staff_login_page.php";
+    window.location.href = "../php/staff_login_page.php";
   });
 }
 
@@ -43,7 +43,7 @@ function addCustomerLoginButtonFunctionality() {
 function addRegisterButtonFunctionality() {
   let registerButton = document.getElementById("register-button");
   registerButton.addEventListener("click", () => {
-    window.location.href = "register_page.php";
+    window.location.href = "../php/customer_register_page.php";
   });
 }
 
