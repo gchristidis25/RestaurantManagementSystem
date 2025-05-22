@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #F5F2EC;
-  color: #1C2A39;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f5f2ec;
+  color: #1c2a39;
 }
 
 main {
@@ -17,15 +17,15 @@ main {
 }
 
 #button-container {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .timeslot-button {
-  background-color: #1C2A39;
+  background-color: #1c2a39;
   color: white;
-  border: 2px solid #6E7278;
+  border: 2px solid #6e7278;
   border-radius: 12px;
   padding: 1rem 2rem;
   font-size: 1.25rem;
@@ -35,19 +35,19 @@ main {
 }
 
 .timeslot-button:hover {
-  background-color: #8A4B2D;
-  border-color: #D6A400;
+  background-color: #8a4b2d;
+  border-color: #d6a400;
   color: white;
 }
 
 .timeslot-button:active {
-  background-color: #C0392B;
+  background-color: #c0392b;
   transform: scale(0.98);
 }
 
 .timeslot-button {
   color: white;
-  border: 2px solid #6E7278;
+  border: 2px solid #6e7278;
   border-radius: 12px;
   padding: 1rem 2rem;
   font-size: 1.25rem;
@@ -62,42 +62,41 @@ main {
 main h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #1C2A39;           
+  color: #1c2a39;
   text-align: center;
   margin-bottom: 2rem;
-  border-bottom: 3px solid #D6A400;
+  border-bottom: 3px solid #d6a400;
 }
 
 .timeslot-button {
-  background-color: #1C2A39;
+  background-color: #1c2a39;
 }
-
 
 .timeslot-button.low-capacity {
   background-color: #409429;
-  border-color: #6E7278;
+  border-color: #6e7278;
 }
 
 .timeslot-button.low-capacity:hover {
-  background-color: #6E7278;
-  border-color: #D6A400;
-  color: #1C2A39;
+  background-color: #6e7278;
+  border-color: #d6a400;
+  color: #1c2a39;
 }
 
 .timeslot-button.high-capacity {
-  background-color: #8A4B2D;
-  border-color: #C0392B;
+  background-color: #8a4b2d;
+  border-color: #c0392b;
 }
 
 .timeslot-button.high-capacity:hover {
-  background-color: #C0392B;
-  border-color: #D6A400;
-  color: #F5F2EC;
+  background-color: #c0392b;
+  border-color: #d6a400;
+  color: #f5f2ec;
 }
 
 .timeslot-button.full-booked {
-  background-color: #C0392B;
-  border-color: #8A4B2D;
+  background-color: #c0392b;
+  border-color: #8a4b2d;
   cursor: not-allowed;
   opacity: 0.7;
   pointer-events: none;

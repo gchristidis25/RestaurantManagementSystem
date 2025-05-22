@@ -1,9 +1,8 @@
-
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F5F2EC;
-  color: #1C2A39;  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f2ec;
+  color: #1c2a39;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,20 +21,20 @@ main {
 h1 {
   margin-bottom: 20px;
   font-size: 2.4rem;
-  color: #8A4B2D;
+  color: #8a4b2d;
 }
 
 p {
   font-size: 1.1rem;
-  color: #6E7278;
+  color: #6e7278;
   line-height: 1.5;
 }
 
 button {
   margin-top: 30px;
   padding: 12px 25px;
-  background-color: #C0392B;
-  color: #F5F2EC;
+  background-color: #c0392b;
+  color: #f5f2ec;
   border: none;
   border-radius: 6px;
   font-weight: 600;

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: white;
-  color: #1C2A39;
+  color: #1c2a39;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ form {
 label {
   display: block;
   font-weight: 600;
-  color: #1C2A39;      
+  color: #1c2a39;
   margin-bottom: 0.5rem;
   font-size: 2rem;
 }
@@ -36,25 +36,25 @@ label {
   width: 40%;
   min-height: 200px;
   padding: 1rem;
-  border: 2px solid #6E7278;
+  border: 2px solid #6e7278;
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
   resize: vertical;
-  background-color: #F5F2EC;
-  color: #1C2A39;
+  background-color: #f5f2ec;
+  color: #1c2a39;
   transition: border-color 0.3s ease;
 }
 
 #reservation-details:focus {
   outline: none;
-  border-color: #D6A400;
+  border-color: #d6a400;
   background-color: white;
 }
 
 button#submit {
   padding: 0.75rem 1.5rem;
-  background-color: #8A4B2D;
+  background-color: #8a4b2d;
   color: white;
   border: none;
   border-radius: 12px;
@@ -66,7 +66,7 @@ button#submit {
 }
 
 button#submit:hover {
-  background-color: #C0392B;
+  background-color: #c0392b;
 }
 
 #return-button {

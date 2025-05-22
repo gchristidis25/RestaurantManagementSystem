@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #F5F2EC;
-  color: #1C2A39;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f5f2ec;
+  color: #1c2a39;
 }
 
 main {
@@ -13,7 +13,6 @@ main {
   padding: 2rem;
 }
 
-
 .container {
   background-color: #ffffff;
   padding: 2rem;
@@ -21,11 +20,10 @@ main {
   box-shadow: 0 4px 12px rgba(28, 42, 57, 0.15);
   max-width: 500px;
   width: 100%;
-  border: 1px solid #6E7278;
+  border: 1px solid #6e7278;
   display: flex;
   flex-direction: column;
 }
-
 
 form {
   display: flex;
@@ -41,30 +39,30 @@ form {
 label {
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #1C2A39;
+  color: #1c2a39;
 }
 
 input[type="date"],
 input[type="number"] {
   padding: 0.75rem;
   border-radius: 8px;
-  border: 1px solid #6E7278;
+  border: 1px solid #6e7278;
   font-size: 1rem;
-  background-color: #F5F2EC;
-  color: #1C2A39;
+  background-color: #f5f2ec;
+  color: #1c2a39;
   transition: border-color 0.3s ease;
 }
 
 input[type="date"]:focus,
 input[type="number"]:focus {
   outline: none;
-  border-color: #D6A400;
+  border-color: #d6a400;
 }
 
 #submit {
   padding: 0.75rem 1.25rem;
-  background-color: #8A4B2D;
-  color: #F5F2EC;
+  background-color: #8a4b2d;
+  color: #f5f2ec;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -74,7 +72,7 @@ input[type="number"]:focus {
 }
 
 button#submit:hover {
-  background-color: #C0392B;
+  background-color: #c0392b;
 }
 
 #return-button {

@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,7 +61,7 @@ main {
 .content h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: #1C2A39; 
+  color: #1c2a39;
   text-align: center;
   width: 100%;
   max-width: 800px;
@@ -72,23 +73,23 @@ main table {
   border-collapse: collapse;
   margin-bottom: 2rem;
   font-family: sans-serif;
-  color: #6E7278;
-  background-color: #F5F2EC;
+  color: #6e7278;
+  background-color: #f5f2ec;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
 
 main thead {
-  background-color: #1C2A39;
-  color: #F5F2EC;
+  background-color: #1c2a39;
+  color: #f5f2ec;
   text-align: center;
 }
 
 main thead th {
   padding: 1rem;
   font-weight: bold;
-  border-bottom: 2px solid #6E7278;
+  border-bottom: 2px solid #6e7278;
 }
 
 main tbody tr {
@@ -97,7 +98,7 @@ main tbody tr {
 }
 
 main tbody tr:nth-child(even) {
-  background-color: #F5F2EC;
+  background-color: #f5f2ec;
 }
 
 main tbody tr:nth-child(odd) {
@@ -105,13 +106,13 @@ main tbody tr:nth-child(odd) {
 }
 
 main tbody tr:hover {
-  background-color: #D6A400;
-  color: #1C2A39;
+  background-color: #d6a400;
+  color: #1c2a39;
 }
 
 main td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #6E7278;
+  border-bottom: 1px solid #6e7278;
 }
 
 section {

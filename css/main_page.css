@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -40,7 +41,8 @@ nav {
   gap: 0.5rem;
 }
 
-#login-button, #register-button {
+#login-button,
+#register-button {
   padding: 8px 16px;
   background-color: #d6a400;
   border-radius: 6px;
@@ -51,7 +53,8 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-#login-button:hover, #register-button:hover {
+#login-button:hover,
+#register-button:hover {
   background-color: #c0392b;
   color: #f5f2ec;
   cursor: pointer;
@@ -152,7 +155,8 @@ h2 {
   transition: background 0.3s;
 }
 
-.glide__bullet:hover, .glide__bullet.glide__bullet--active {
+.glide__bullet:hover,
+.glide__bullet.glide__bullet--active {
   background-color: #c0392b;
   border-color: #c0392b;
 }
