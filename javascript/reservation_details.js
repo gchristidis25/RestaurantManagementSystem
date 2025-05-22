@@ -79,7 +79,7 @@ function getEndTime()
 }
 
 async function createReservation()
-{
+{   
     const customerID = getCustomerID();
     const numberGuests = getGuests();
     const date = getChosenDate();
@@ -114,8 +114,18 @@ function addSubmitButtonFunctionality()
     submitButton.addEventListener("click", async(event) => {
         event.preventDefault();
         await createReservation();
-        // window.location.href = "reservation_submitted.php";
+        window.location.href = "reservation_submitted.php";
     })
 }
 
-document.addEventListener("click", addSubmitButtonFunctionality)
+function addReturnButtonFunctionality() {
+  const returnButton = document.getElementById("return-button");
+  returnButton.addEventListener("click", () => {
+    location.href = "../php/timeslots.php";
+  });
+}
+
+document.addEventListener("click", () => {
+    addSubmitButtonFunctionality();
+    addReturnButtonFunctionality();
+})

@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background-color: white;
+  color: #1C2A39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  padding: 10rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #1C2A39;      
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+#reservation-details {
+  width: 40%;
+  min-height: 200px;
+  padding: 1rem;
+  border: 2px solid #6E7278;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  background-color: #F5F2EC;
+  color: #1C2A39;
+  transition: border-color 0.3s ease;
+}
+
+#reservation-details:focus {
+  outline: none;
+  border-color: #D6A400;
+  background-color: white;
+}
+
+button#submit {
+  padding: 0.75rem 1.5rem;
+  background-color: #8A4B2D;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(138, 75, 45, 0.4);
+}
+
+button#submit:hover {
+  background-color: #C0392B;
+}
+
+#return-button {
+  background: #4b5320;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 15px;
+  transition: transform 0.2s;
+  border-radius: 50%;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#return-button img {
+  width: 32px;
+  height: 32px;
+}
+
+#return-button:hover {
+  transform: scale(1.1);
+  background-color: #c0392b;
+}
