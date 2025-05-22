@@ -111,7 +111,7 @@ function addReturnButtonFunctionality() {
   });
 }
 
-document.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
   addSubmitButtonFunctionality();
   addReturnButtonFunctionality();
 });
