@@ -13,21 +13,22 @@
     $result = file_get_contents($API_URL, false, $context);
     $result = json_decode($result, true);
 
-
-    $name = $result["name"];
-    $id = $result["id"];
     $login_succeed = $result["message"];
     if ($login_succeed)
     {
-        $role = $result["role"];
-        $_SESSION["user_logged_in"] = true;
+        $name = $result["name"];
+        $id = $result["id"];
+
+        $_SESSION["staff_logged_in"] = true;
         $_SESSION["name"] = $name;
         $_SESSION["id"] = $id;
+
+        $role = $result["role"];
 
         switch ($role)
         {
             case "Waiter":
-                header("Location: waiter_management_system.php");
+                header("Location: reservation_management.php");
                 break;
             default:
                 header("Location: not_implemented.php");

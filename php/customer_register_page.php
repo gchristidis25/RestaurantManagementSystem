@@ -32,7 +32,7 @@
             </div>
             <button type="submit">Register</button>
         </form>
-            <button id="return-button"><img src="../images/return_icon.svg"></button>
+        <button id="return-button"><img src="../images/return_icon.svg"></button>
     </div>
 </body>
 </html>

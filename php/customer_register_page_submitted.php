@@ -17,7 +17,7 @@
 
     if ($register_succeed)
     {
-        header("Location: main_page.php");
+        header("Location: customer_register_succeed.php");
         exit;
     }
 ?>
@@ -35,6 +35,7 @@
         <form action="customer_register_page_submitted.php" method="POST">
 
             <h2>User Registration Form</h2>
+            <h2 id="warning">Account already exists!</h2>
             <div class="form-item">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -57,7 +58,7 @@
             </div>
             <button type="submit">Register</button>
         </form>
-            <button id="return-button"><img src="../images/return_icon.svg"></button>
+        <button id="return-button"><img src="../images/return_icon.svg"></button>
     </div>
 </body>
 </html>

@@ -1,15 +1,12 @@
-/* General reset */
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f2ec; /* Soft background */
+  background-color: #f5f2ec;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +14,6 @@ body {
   color: #1c2a39;
 }
 
-/* Container */
 #container {
   display: flex;
   flex-direction: column;
@@ -27,7 +23,6 @@ body {
   padding: 20px;
 }
 
-/* Form styling */
 form {
   background-color: white;
   height: auto;
@@ -42,7 +37,6 @@ form {
   gap: 20px;
 }
 
-/* Header */
 h2 {
   text-align: center;
   font-size: 30px;
@@ -57,7 +51,6 @@ h2 {
   gap: 10px;
 }
 
-/* Label styling */
 label {
   font-size: 15px;
   color: #6e7278;
@@ -65,27 +58,21 @@ label {
   text-align: center;
 }
 
-/* Input fields */
 input {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
-  transition:
-    border-color 0.3s,
-    box-shadow 0.3s;
   text-align: center;
 }
 
-input:focus,
-select:focus {
+input:focus, select:focus {
   border-color: #d6a400;
   outline: none;
   box-shadow: 0 0 5px rgba(214, 164, 0, 0.4);
 }
 
-/* Button */
 button {
   width: 100%;
   padding: 14px;
@@ -95,9 +82,6 @@ button {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  transition:
-    background-color 0.3s,
-    transform 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,23 +93,34 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Return button */
 #return-button {
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
+  width: 10%;
+  background: #4b5320;
   border: none;
   cursor: pointer;
-  align-self: flex-end;
+  padding: 10px;
   transition: transform 0.2s;
-  margin-bottom: 10px;
+  align-self: flex-end;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #return-button img {
-  width: 100%;
-  height: auto;
+  width: 32px;
+  height: 32px;
 }
 
 #return-button:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
+  background-color: #c0392b;
+}
+
+#warning {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #c0392b;
+  font-weight: bold;
 }

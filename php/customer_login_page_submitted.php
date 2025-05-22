@@ -14,15 +14,16 @@
     $result = file_get_contents($API_URL, false, $context);
     $result = json_decode($result, true);
 
-
-    $name = $result["name"];
-    $id = $result["id"];
     $login_succeed = $result["message"];
     if ($login_succeed)
     {
+        $name = $result["name"];
+        $id = $result["id"];
+
         $_SESSION["customer_logged_in"] = true;
         $_SESSION["name"] = $name;
         $_SESSION["id"] = $id;
+        
         header("Location: customer_dashboard.php");
         exit;
     }

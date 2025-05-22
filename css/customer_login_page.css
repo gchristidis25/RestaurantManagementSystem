@@ -1,10 +1,8 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
 }
 
-/* Body styling */
 body {
   font-family: "Georgia", serif;
   background-color: #f5f2ec;
@@ -14,9 +12,8 @@ body {
   height: 100vh;
 }
 
-/* Main login container */
 main {
-  background-color: #ffffff;
+  background-color: white;
   padding: 40px 30px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -25,7 +22,6 @@ main {
   border-top: 8px solid #d6a400;
 }
 
-/* Header */
 h2 {
   text-align: center;
   font-size: 28px;
@@ -34,27 +30,24 @@ h2 {
   font-weight: bold;
 }
 
-/* Form layout */
 form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-/* Labels */
 label {
   display: block;
   font-size: 16px;
   color: #6e7278;
 }
 
-/* Input fields */
 input {
   padding: 12px;
   border: 2px solid #6e7278;
   border-radius: 6px;
   font-size: 15px;
-  background-color: #f5f2ec;
+  background-color: white;
   color: #1c2a39;
 }
 
@@ -81,7 +74,6 @@ button:hover {
   color: #1c2a39;
 }
 
-/* Container spacing */
 #container {
   display: flex;
   flex-direction: column;
@@ -89,7 +81,6 @@ button:hover {
   gap: 10px;
 }
 
-/* Return/back button */
 #return-button {
   width: 10%;
   background: #4b5320;

@@ -1,12 +1,9 @@
-/* General reset */
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f2ec;
@@ -17,7 +14,6 @@ body {
   color: #1c2a39;
 }
 
-/* Container */
 #container {
   display: flex;
   flex-direction: column;
@@ -27,7 +23,6 @@ body {
   padding: 20px;
 }
 
-/* Form styling */
 form {
   background-color: white;
   padding: 40px 30px;
@@ -41,7 +36,6 @@ form {
   gap: 20px;
 }
 
-/* Header */
 h2 {
   text-align: center;
   font-size: 30px;
@@ -56,7 +50,6 @@ h2 {
   gap: 10px;
 }
 
-/* Label styling */
 label {
   width: 50%;
   font-size: 15px;
@@ -65,7 +58,6 @@ label {
   text-align: center;
 }
 
-/* Input fields */
 input {
   width: 100%;
   padding: 12px 14px;
@@ -80,19 +72,17 @@ input {
   color: #1c2a39;
 }
 
-input:focus,
-select:focus {
+input:focus, select:focus {
   border-color: #d6a400;
   outline: none;
   box-shadow: 0 0 5px rgba(214, 164, 0, 0.4);
 }
 
-/* Button */
 button {
   width: 100%;
   padding: 14px;
   background-color: #4b5320;
-  color: #f5f2ec;
+  color: white;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -111,25 +101,28 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Return button */
 #return-button {
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
+  width: 10%;
+  background-color: #4b5320;
   border: none;
   cursor: pointer;
-  align-self: flex-end;
+  padding: 10px;
   transition: transform 0.2s;
-  margin-bottom: 10px;
+  align-self: flex-end;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #return-button img {
-  width: 100%;
-  height: auto;
+  width: 32px;
+  height: 32px;
 }
 
 #return-button:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
+  background-color: #c0392b;
 }
 
 #warning {
