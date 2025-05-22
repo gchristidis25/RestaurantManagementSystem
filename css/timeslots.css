@@ -1,11 +1,136 @@
-.low-capacity {
-    background-color: green;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #F5F2EC;
+  color: #1C2A39;
 }
 
-.high-capacity {
-    background-color: brown;
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
-.full-booked {
-    background-color: red;
+#button-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timeslot-button {
+  background-color: #1C2A39;
+  color: white;
+  border: 2px solid #6E7278;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(28, 42, 57, 0.15);
+}
+
+.timeslot-button:hover {
+  background-color: #8A4B2D;
+  border-color: #D6A400;
+  color: white;
+}
+
+.timeslot-button:active {
+  background-color: #C0392B;
+  transform: scale(0.98);
+}
+
+.timeslot-button {
+  color: white;
+  border: 2px solid #6E7278;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  box-shadow: 0 4px 10px rgba(28, 42, 57, 0.15);
+  user-select: none;
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1C2A39;           
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #D6A400;
+}
+
+.timeslot-button {
+  background-color: #1C2A39;
+}
+
+
+.timeslot-button.low-capacity {
+  background-color: #409429;
+  border-color: #6E7278;
+}
+
+.timeslot-button.low-capacity:hover {
+  background-color: #6E7278;
+  border-color: #D6A400;
+  color: #1C2A39;
+}
+
+.timeslot-button.high-capacity {
+  background-color: #8A4B2D;
+  border-color: #C0392B;
+}
+
+.timeslot-button.high-capacity:hover {
+  background-color: #C0392B;
+  border-color: #D6A400;
+  color: #F5F2EC;
+}
+
+.timeslot-button.full-booked {
+  background-color: #C0392B;
+  border-color: #8A4B2D;
+  cursor: not-allowed;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.timeslot-button:not(.full-booked):hover {
+  filter: brightness(1.1);
+  box-shadow: 0 6px 14px rgba(28, 42, 57, 0.3);
+}
+
+.timeslot-button:not(.full-booked):active {
+  transform: scale(0.97);
+}
+
+#return-button {
+  background: #4b5320;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 15px;
+  transition: transform 0.2s;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#return-button img {
+  width: 32px;
+  height: 32px;
+}
+
+#return-button:hover {
+  transform: scale(1.1);
+  background-color: #c0392b;
 }

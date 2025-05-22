@@ -69,14 +69,14 @@ function addTimeSlotButtonFunctionality(timeslotButton) {
     timeslotButton.addEventListener("click", () => {
         let startTime = timeslotButton.textContent.trim();
         const formattedStartTime = `${startTime}:00`;
-
+        //Format time to be HH:MM:SS
         const [hours, minutes] = startTime.split(":").map(Number);
         const now = new Date();
         now.setHours(hours, minutes, 0, 0);
 
         const endDate = new Date(now.getTime() + 3 * 60 * 60 * 1000); // Add 3 hours
         const formattedEndTime = endDate.toTimeString().slice(0, 8); // "HH:MM:SS"
-
+        // Save time to a cookie
         document.cookie = `startTime=${formattedStartTime}; path=/; max-age=${60 * 60}`;
         document.cookie = `endTime=${formattedEndTime}; path=/; max-age=${60 * 60}`;
 
@@ -110,6 +110,14 @@ async function addTimeslotButtons()
     }
 }
 
+function addReturnButtonFunctionality() {
+  const returnButton = document.getElementById("return-button");
+  returnButton.addEventListener("click", () => {
+    location.href = "../php/reservation.php";
+  });
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
-    await addTimeslotButtons()
+    await addTimeslotButtons();
+    addReturnButtonFunctionality();
 });
