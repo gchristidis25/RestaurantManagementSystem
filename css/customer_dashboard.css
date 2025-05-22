@@ -1,6 +1,4 @@
-/* General Reset */
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +6,7 @@ body {
 
 body {
   font-family: "Helvetica Neue", sans-serif;
-  background-color: #f5f2ec;
+  background-color: white;
   color: #1c2a39;
   line-height: 1.6;
 }
@@ -16,7 +14,7 @@ body {
 /* Header Styling */
 header {
   background-color: #1c2a39;
-  color: #f5f2ec;
+  color: wgite;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +29,7 @@ header h2 {
 /* Button Group */
 .button-group button {
   background-color: #c0392b;
-  color: #f5f2ec;
+  color: white;
   border: none;
   border-radius: 4px;
   padding: 0.6rem 1.2rem;
@@ -57,6 +55,63 @@ main {
 .content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.content h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #1C2A39; 
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+main table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+  color: #6E7278;
+  background-color: #F5F2EC;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+main thead {
+  background-color: #1C2A39;
+  color: #F5F2EC;
+  text-align: center;
+}
+
+main thead th {
+  padding: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #6E7278;
+}
+
+main tbody tr {
+  transition: background-color 0.2s;
+  text-align: center;
+}
+
+main tbody tr:nth-child(even) {
+  background-color: #F5F2EC;
+}
+
+main tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+main tbody tr:hover {
+  background-color: #D6A400;
+  color: #1C2A39;
+}
+
+main td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #6E7278;
 }
 
 section {
