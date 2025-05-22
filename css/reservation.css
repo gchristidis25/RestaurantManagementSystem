@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #F5F2EC;
+  color: #1C2A39;
+}
+
+main {
+  min-height: calc(100vh - 96px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(28, 42, 57, 0.15);
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #6E7278;
+  display: flex;
+  flex-direction: column;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #1C2A39;
+}
+
+input[type="date"],
+input[type="number"] {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #6E7278;
+  font-size: 1rem;
+  background-color: #F5F2EC;
+  color: #1C2A39;
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #D6A400;
+}
+
+#submit {
+  padding: 0.75rem 1.25rem;
+  background-color: #8A4B2D;
+  color: #F5F2EC;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#submit:hover {
+  background-color: #C0392B;
+}
+
+#return-button {
+  width: 10%;
+  background: #4b5320;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  transition: transform 0.2s;
+  align-self: flex-end;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#return-button img {
+  width: 32px;
+  height: 32px;
+}
+
+#return-button:hover {
+  transform: scale(1.1);
+  background-color: #c0392b;
+}

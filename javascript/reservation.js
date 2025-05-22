@@ -22,10 +22,17 @@ function addSubmitButtonFunctionality()
     });
 }
 
+function addReturnButtonFunctionality() {
+  const returnButton = document.getElementById("return-button");
+  returnButton.addEventListener("click", () => {
+    location.href = "../php/customer_dashboard.php";
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     saveForm();
     addSubmitButtonFunctionality();
+    addReturnButtonFunctionality();
 });
 
 
