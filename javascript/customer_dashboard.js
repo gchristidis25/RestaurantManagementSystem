@@ -58,31 +58,31 @@ function createTable() {
   return table;
 }
 
-function displayReservations(pendingReservations) {
-  if (pendingReservations.length === 0) return null;
+function displayReservations(reservations) {
+  if (reservations.length === 0) return null;
   const table = createTable();
   const tbody = document.createElement("tbody");
 
-  for (const pendingReservation of pendingReservations) {
+  for (const reservation of reservations) {
     const row = document.createElement("tr");
     const dateCell = document.createElement("td");
-    dateCell.textContent = pendingReservation["Reservation_date"];
+    dateCell.textContent = reservation["Reservation_date"];
     row.appendChild(dateCell);
 
     const startTimeCell = document.createElement("td");
-    startTimeCell.textContent = pendingReservation["Start_time"];
+    startTimeCell.textContent = reservation["Start_time"];
     row.appendChild(startTimeCell);
 
     const endTimeCell = document.createElement("td");
-    endTimeCell.textContent = pendingReservation["End_time"];
+    endTimeCell.textContent = reservation["End_time"];
     row.appendChild(endTimeCell);
 
     const guestNumberCell = document.createElement("td");
-    guestNumberCell.textContent = pendingReservation["NumberOfGuests"];
+    guestNumberCell.textContent = reservation["NumberOfGuests"];
     row.appendChild(guestNumberCell);
 
     const notesCell = document.createElement("td");
-    notesCell.textContent = pendingReservation["Reservation_notes"];
+    notesCell.textContent = reservation["Reservation_notes"];
     row.appendChild(notesCell);
 
     tbody.appendChild(row);
@@ -100,10 +100,11 @@ async function display() {
   )
     return;
 
+
   const content = document.querySelector(".content");
   content.innerHTML = "";
 
-  if (pendingReservations) {
+  if (pendingReservations.length > 0) {
     const pendingTitle = document.createElement("h2");
     pendingTitle.textContent = "Pending Reservations";
     content.appendChild(pendingTitle);
@@ -112,7 +113,7 @@ async function display() {
     content.appendChild(pendingReservationsTable);
   }
 
-  if (confirmedReservations) {
+  if (confirmedReservations.length > 0) {
     const confirmedTitle = document.createElement("h2");
     confirmedTitle.textContent = "Confirmed Reservations";
     content.appendChild(confirmedTitle);
